@@ -13,5 +13,20 @@ public class UserController {
     public void  findLoginUser(){
         String name = SecurityContextHolder.getContext().getAuthentication().getName();
         System.out.println(name);
+
+
+
     }
+
+    @RequestMapping("/find")
+    public String find(){
+        return "haha";
+    }
+
+    @RequestMapping("/find")
+    public String find1(){
+        return "haha";
+    }
+
+
 }
